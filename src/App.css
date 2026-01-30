@@ -12,21 +12,45 @@
   height: 90vh;
   width: 90%;
 }
-
+.header{
+width: 100%;
+height: 10%;
+display: flex;
+justify-content: center; 
+background-color:rebeccapurple;
+border: 1px solid rgb(156, 92, 14);
+}
 .headerbox{
-  width: 100%;
-  height: 10%;
+  width: 90%;
+  height: 80%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid rgb(156, 92, 14);
-  background-color: rebeccapurple;
+  align-items: center;
+  background: transparent;
+}
+
+.headerbox p{
+  background: transparent;
+  font-size: larger;
+  font-weight: 600;
+}
+.headerbox h1{
+  background: transparent;
 }
 
 
 .settings{
   display: flex;
+  justify-content: space-between;
+  background: transparent;
   gap: 10px;
 }
+
+
+/*------------------------content box---------------------*/
+
+
+
 .contentbox{
   border: 1px solid blue;
   display: flex;
@@ -34,7 +58,7 @@
   height: 90%;
   width: 100%;
 }
-.tasks{
+.tasksmainbox{
   border: 1px solid green;
   height: 100%;
   width: 70%;
@@ -43,7 +67,7 @@
   justify-content: center;
   align-items: center;
 }
-.calendar{
+.rightbox{
   border: 1px solid red;
   height: 100%;
   background-color: #FFFFFF;
@@ -51,4 +75,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.calendar{
+  position: relative;
+  top: 0;
+}
+
+.tasksbox{
+  border: 1px solid violet;
+  height: 80%;
+  width: 80%;
+}
+
+.inputbox{
+
+}
+
+#dash{
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+
+#header{
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.listoftasks{
+  margin-left:20px ;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.singletask{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
